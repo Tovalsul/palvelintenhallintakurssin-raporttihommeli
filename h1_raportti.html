@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>&lt;Päivitä tämä&gt;</title>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="created" content="2025-10-21T17:40:34.093454066"/>
+	<meta name="changed" content="2025-10-26T17:09:18.196333587"/>
+	<meta name="description" content="&lt;Päivitä tähän asiakirjatyyppi&gt;"/>
+	<meta name="AppVersion" content="16.0000"/>
+	<meta name="Notebook type" content="Notebook type"/>
+	<meta name="OOXMLCorePropertyCategory" content="&lt;Päivitä tähän asiakirjatyyppi&gt;"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.59in; margin-top: 0.39in; margin-bottom: 0.39in }
+		p { line-height: 115%; text-align: left; orphans: 2; widows: 2; margin-bottom: 0.1in; direction: ltr; background: transparent }
+		p.western { font-family: "Arial", serif }
+		h1 { line-height: 100%; text-align: left; page-break-inside: avoid; orphans: 2; widows: 2; margin-top: 0in; margin-bottom: 0.15in; direction: ltr; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Arial", serif; font-weight: bold }
+		h1.cjk { font-family: "游ゴシック Light"; font-weight: bold }
+		h1.ctl { font-family: "Times New Roman"; font-size: 16pt }
+		a:link { color: #000080; text-decoration: underline }
+	</style>
+</head>
+<body lang="fi-FI" link="#000080" vlink="#800000" dir="ltr">
+<div title="header"><p class="western" style="line-height: 100%; margin-bottom: 0.15in">
+	<font face="Arial, serif"><font size="2" style="font-size: 11pt">Tony
+	Lehtonen</font></font>	<font face="Arial, serif"><font size="2" style="font-size: 11pt"><b>Raportti</b></font></font><b>	</b><span style="background: #c0c0c0"><sdfield type=PAGE subtype=RANDOM format=PAGE>3</sdfield></span>
+	(1)</p>
+	<p class="western" style="line-height: 100%; margin-bottom: 0.15in">Haaga-Helia
+	ammattikorkeakoulu	<span lang="en-US"><span style="background: #c0c0c0"><sdfield type=DATETIME sdnum="1033;1035;P.K.VVVV">26.10.2025</sdfield></span></span></p>
+	<p class="western" style="line-height: 100%; margin-bottom: 0.15in">ICI001AS3A-3012</p>
+	<p class="western" style="line-height: 100%; margin-bottom: 1.14in">	</p>
+</div><h1 class="western">x)</h1>
+<h1 class="western">Install Salt on Debian 13 Trixie-tiivistelmä:</h1>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+<span lang="en-US">-Tarvitset virtuaalikoneen, jolla pyörii debian
+13 trixie, sekä sille uuden repon apt-paketteja varten, jonka
+jälkeen “, </span>your new software updates automatically”(lainaus
+lauseen keskeltä).</p>
+<p lang="en-US" style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+-”Se sisältää vain 2 tiedostoa: PGP julkisen avaimen sekä
+sources.list tiedoston, joka sisältää ladattavien binäärien
+URL:n”(löyhästi lainattu ja käännetty lainaus”).</p>
+<p lang="en-US" style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+-Askeleet lyhykäisyydessään: Asenna virtuaalikoneelle debian 13
+trixie, asenna wget, todenna repon tiedostot, lataa tiedostot salttia
+varten, lisää julkinen avain avainrinkulaasi ja asenna salt. Tämän
+jälkeen testaa onko se asennettu oikein.</p>
+<p lang="en-US" style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+<br/>
+<br/>
+
+</p>
+<h1 class="western">Run Salt Command Locally-tiivistelmä:</h1>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+Salttia pystyy pyörittämään paikallisesti ja samat komennot
+toimivat sekä linuxilla että windowsilla”(löyhä
+käännöslainaus). Artikkelin mukaan kaikkein tärkeimmät
+tilafunktiot ovat: ”pkg, file, service, user and cmd.”, lisäksi
+artikkelin mukaan saltia käytetään hallitsemaan useita orjakoneita
+verkon kautta.</p>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+Muuten sivulta löytyy lyhyet ohjeet Salt orja daemonin asentamiseen,
+jonka vaiheet menevät suunnilleen näin: Asenna salt orja, tarkista
+saltin asennus, sekä sen konfiguraatio tiedostojen olemassaolon,
+tarkista että palvelu pyörii ja että käyttäjä on olemassa.
+Lisäksi toivottiin idempotenssia.</p>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+<br/>
+<br/>
+
+</p>
+<h1 class="western">Salt Quickstart – Salt Stack Master and Slave
+on Ubuntu Linux-tiivistelmä:</h1>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+Artikkelissa on lyhyet ohjeet herra/orja-arkkitehtuurin luomiseen
+saltilla. Lisäksi artikkelissa kerrotaan että: ”Orjat voivat
+sijaita käytännössä missä verkossa vain, vaikka tuntemattomissa
+osoitteissa tai palomuurine takanakin. Vain herrakone tarvitsee
+tunnetun ja julkisen osoitteen.”(löyhä käännöslainaus)</p>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+<br/>
+<br/>
+
+</p>
+<h1 class="western">Raportin kirjoittaminen:</h1>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+Ohjeet raportin tekemiseen. Raportin tulisi olla toistettava,
+täsmällinen, helppolukuinen ja siitä pitäisi löytyä
+lähdeviittaukset. Sivulta löytyy myös lista pahoista mokista joita
+tulisi välttää kokonaan. Ei saa sepittää eli selitellä omia
+jonnin joutavia tai väittää että olisi tehnyt jotain testejä,
+joita ei todellisuudessa ole koskaan tehnykkään, ei saa plagioida
+eli kopioida toisten tekstejä, ilman lähdeviittausta ja esitellä
+niitä omina teksteinä, sekä ei saa lisätä luvatta netistä
+löytyneitä kuvia. ”Verkossa on myös paljon kuvia, joita saa
+yhdistää omiin töihin. Lähde on aina ilmoitettava. Kotitehtävissä
+työn tulee olla pääosin opiskelijan itse tekemä.”</p>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+<br/>
+<br/>
+
+</p>
+<h1 class="western">a) Debian 13-Trixien asennus:</h1>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+<span id="Frame1" dir="ltr" style="float: left; width: 5.85in; border: none; padding: 0in; background: #ffffff"><p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.08in">
+	<img src="h1_raportti_html_f6eb15ed.png" name="Image1" align="left" width="100%" height="auto">
+  <br clear="left"/>
+</img>
+Figure
+	<span style="background: #c0c0c0">1</span>: Tämmönen errori tuli,
+	kun yritti debiania asentaa virtualboxiin...</p>
+</span><br/>
+<br/>
+
+</p>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+Kokeilen unloadaa kvm moduulit komennolla sudo modprobe -r kvm_amd.
+Ei toiminut rebootin jälkeen, vaan sieltä tuli täsmälleen sama
+errori. Kokeilin uudestaan ja en rebootannu koko konetta tällä
+kertaa ja sitten lähti toimimaan.</p>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+<span id="Frame2" dir="ltr" style="float: left; width: 5.98in; border: none; padding: 0in; background: #ffffff"><p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.08in">
+	<img src="h1_raportti_html_258693.png" name="Image2" align="left" width="100%" height="auto">
+  <br clear="left"/>
+</img>
+Figure
+	<span style="background: #c0c0c0">2</span>: Debianin asennuksen
+	lopussa tuli tälläinen ilmoitus.</p>
+</span><br/>
+<br/>
+
+</p>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+Käynnistyi kuitenkin ilmoituksesta huolimatta. Saa nähdä
+vaikuttaako tuo mitenkään harjoituksiin.</p>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+En saanut koko paskaa toimimaan ollenkaan tai edes helvetin
+pakettilistoja päivitettyä. Vittu mitä paskaa.</p>
+<h1 class="western">Lähteet:</h1>
+<p style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+https://terokarvinen.com/install-salt-on-debian-13-trixie/</p>
+<p lang="en-US" style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+<a href="https://terokarvinen.com/2021/salt-run-command-locally/">https://terokarvinen.com/2021/salt-run-command-locally/</a></p>
+<p lang="en-US" style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+<a href="https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/">https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/</a></p>
+<p lang="en-US" style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+<a href="https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/">https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/</a></p>
+<p lang="en-US" style="line-height: 100%; margin-left: 0.91in; margin-bottom: 0.15in">
+<br/>
+<br/>
+
+</p>
+<div title="footer"><p style="line-height: 100%; margin-top: 0.55in; margin-bottom: 0in">
+	<br/>
+
+	</p>
+</div>
+</body>
+</html>
